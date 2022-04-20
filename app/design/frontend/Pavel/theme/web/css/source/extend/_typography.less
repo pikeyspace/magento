@@ -1,0 +1,36 @@
+.lib-typography__base(
+    @_p-text-align: @p__text-align,
+    @_p-text-color: @p__text-color,
+){
+    p {
+            .lib-css(text-align, @_p-text-align);
+            .lib-css(color, @_p-text-color);
+    }
+
+}
+
+.lib-typography-lists(
+    @_li-list-style-tipe: @li__list-style,
+    @_list-color: @list__color,
+
+){
+    ul,
+    ol {
+        > li {
+                .lib-css(list-style-type, @_li-list-style-tipe);
+                .lib-css(color, @_list-color);
+        }
+    }
+}
+
+.page-title{
+    .lib-css(text-align, @title__text-align);
+
+    &:first-child {
+        text-align: left;
+    }
+    &:nth-child(3) {
+        text-align: right;
+    }
+}
+

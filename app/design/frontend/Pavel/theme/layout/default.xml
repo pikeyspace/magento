@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="default_head_blocks"/>
+
+    <head>
+        <link src_type="url" type="text/css" src="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+        <link src_type="url" type="text/css" src="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" src_type="url">
+        <link src="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+
+
+    </head>
+
+</page>

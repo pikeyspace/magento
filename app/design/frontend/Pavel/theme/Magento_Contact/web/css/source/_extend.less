@@ -1,0 +1,86 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .form-contact {
+        &__text {
+            &_right {
+                p {
+                    color: @color-orange-red1;
+                }
+            }
+            &_left {
+                p {
+                    color: @color-blue2;
+                }
+            }
+        }
+    }
+}
+
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .form-contact {
+        &__text {
+            &_right {
+                p {
+                    color: @color-blue2;
+                }
+            }
+            &_left {
+                p {
+                    color: @color-orange-red1;
+                }
+            }
+
+        }
+    }
+}
+
+
+.contact-index-index .column:not(.sidebar-additional) .form.contact
+    {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & button{
+        width: 70%;
+        margin: 0 auto;
+    }
+    & .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+.form-top-block{
+    margin-bottom: 50px;
+    & p {
+        text-indent: 50px;
+        &:first-child{
+            margin-bottom: 30px;
+        }
+
+    }
+    & a {
+        float: left;
+        margin: 20px;
+    }
+}
+// .form-submit{
+// }
+
+.fieldset-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
